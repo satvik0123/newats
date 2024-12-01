@@ -105,9 +105,13 @@ def login_page():
         elif verify_login(username.lower(), password):
             st.session_state['logged_in'] = True
             st.session_state['role'] = role.lower()
-            st.reload()
+
+            # Instead of rerun, manually set query params to trigger a reload
+            st.experimental_set_query_params(logged_in=True, role=role.lower())
+            st.experimental_rerun()
         else:
             st.error("Invalid credentials. Please try again.")
+
 
 def student_dashboard():
     """Dashboard for students to generate and analyze resumes."""
