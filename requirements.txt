@@ -16,9 +16,6 @@ nltk==3.8.1
 # Data Manipulation
 pandas==2.0.1
 
-# Cryptography and Security
-hashlib
-
 # Optional but recommended for additional features
 plotly==5.14.1
 google-auth==2.17.3
