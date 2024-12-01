@@ -1,0 +1,24 @@
+# Core Python Libraries
+streamlit==1.29.0
+google-generativeai==0.3.2
+PyPDF2==3.0.1
+python-dotenv==1.0.0
+
+# PDF and Document Processing
+fpdf==1.7.2
+python-docx==1.1.0
+pdf2image==1.16.3
+Pillow==9.5.0
+
+# Natural Language Processing
+nltk==3.8.1
+
+# Data Manipulation
+pandas==2.0.1
+
+# Cryptography and Security
+hashlib
+
+# Optional but recommended for additional features
+plotly==5.14.1
+google-auth==2.17.3
