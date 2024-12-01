@@ -17,11 +17,10 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
-# Configure Google Generative AI (replace with your actual API key)
-GOOGLE_API_KEY = "AIzaSyD95tDMjfi-0z8Kejnt8WzwOXzMQP0_RNI"
+load_dotenv() 
+GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 genai.configure(api_key=GOOGLE_API_KEY)
 
-# User Credentials (in a real-world scenario, use a secure database)
 USER_CREDENTIALS = {
     'student': hashlib.sha256('student123'.encode()).hexdigest(),
     'recruiter': hashlib.sha256('recruiter123'.encode()).hexdigest()
